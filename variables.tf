@@ -58,6 +58,12 @@ variable "lambda_attach_dead_letter_policy" {
   default     = false
 }
 
+variable "lambda_runtime_version" {
+  description = "The Python runtime to use for the Lambda function"
+  type        = string
+  default     = "python3.11"
+}
+
 variable "sns_topic_name" {
   description = "The name of the SNS topic to create"
   type        = string
